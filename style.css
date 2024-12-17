@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+} 
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+        url(imagenes\ -\ copia/transparente.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center; 
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f50087;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label{ 
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f1f100;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ff7925;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+   background-color: #ff5100;
+}
+
+.Dulces {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.Dulces-content {
+    text-align: center;   
+}
+
+.Dulces-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #ff008095;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #323337; 
+    padding: 0 250px;
+    margin-bottom: 35px;
+
+}
+
+.dulces-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+.Dulces-1 {
+    flex: 0 1 calc(25% - 20px); 
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Dulces-1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Dulces-1 h3 {
+    font-size: 16px;
+    color: #414247;
+    margin-top: 10px;
+}
+
+.Dulces-1 p {
+    font-size: 14px;
+    color: #777;
+}
+
+.services-content h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(90deg, #ff8c00, #ff0080, #8000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.services-1 {
+    flex: 0 1 calc(30% - 20px); 
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.services-1:hover {
+    transform: translateY(-5px);
+}
+
+.services-1 img {
+    max-width: 80%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.services-1 h3 {
+    font-size: 18px;
+    color: #414247;
+    margin-bottom: 10px;
+}
+
+.services-1 p {
+    font-size: 14px;
+    color: #777;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ff7925;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+   background-color: #ff5100;
+}
+
+.general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.general-1 {
+    width: 45%;
+    padding: 50px;
+    background-color: #e1e2e6;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.general-2, .general-3 {
+    width: 45%;
+}
+
+.general-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 45px;
+    color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8c00, #ff0080, #8000ff);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 18px;
+    color: #414247;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ff7925;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+   background-color: #ff5100;
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #f50087;
+} 
+
+.footer {
+    padding: 100px 0;
+    background-color:#85c53b;
+} 
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f50087;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #f9fafc;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu-label {
+        direction: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ff62b9;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .Dulces {
+        padding: 30px;
+    }
+
+    .Dulces-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+    .Dulces-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .Dulces-img {
+        display: none;
+    }
+
+    .services {
+        padding: 30px;
+    }
+
+    .services-content p {
+        padding: 0;
+    }
+
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1 {
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    .blog {
+        padding: 30px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #f50087;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.chatbox {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.chatbox p {
+    margin: 10px 0;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#send-button {
+    padding: 10px;
+    background-color: #f50087;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #ff0080;
+}
+
+#close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
